@@ -44,6 +44,22 @@ margin-bottom: 20px; /*css specificity*/
     color: white;
     text-align: center;
     padding: 18px 0 18px 0;
+}
+
+.span-example{
+    color:red;
+    margin-left: 12px;/*This is how you achieve multiple spaces in your words*/
+}
+
+.span-example:hover{
+    text-decoration: underline;
+}
+
+.shop-link{
+    cursor: pointer;
+}
+
+.shop-link:hover{
     text-decoration: underline;
 }
 </style>
@@ -68,16 +84,18 @@ margin-bottom: 20px; /*css specificity*/
 
 <p class="apple-text">
    Shop early for the best selection of holiday 
-   favourites. Shop now &#62;
+   favourites. <span class="shop-link">Shop now</span> &#62;
 </p>
 
 <p>
-    Shop early for the best <strong>selection of holiday</strong> 
-    favourites. Shop now
+    Shop early for the best <strong class="">selection of holiday</strong> 
+    <u>favourites</u>. <span class="span-example">Shop now</span>
 </p>
 
 <!-- text element - is a element that is inside a line of text  -->
 
+
+<!--How to get multiple spaces in html instead of just 1 (1:50:56)-->
 
 <!-- General Technique:
 1. Create element with HTML
