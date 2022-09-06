@@ -1,6 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            .subscribe-button{
+                background-color: rgb(200, 0, 0);
+                color:white;
+                border: none;
+                /* height: 36px; */
+                /* width:105px; */
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 2px;
+                cursor: pointer;
+                margin-right: 8px;/*margin lets us add spacing on the OUTSIDE of our element*/
+                margin-left: 20px;
+                transition:opacity 0.15s; /*take 2 values the second value is how long the transition will take */
+                vertical-align: top;/*This is how you align your button*/
+            }
+        
+            .subscribe-button:hover{
+                opacity:0.8; /*tells us how see-through an html element is*/ /*It goes from 0 to 1*/
+            }
+        
+            .subscribe-button:active{/*This activates when we click on the element*/
+                opacity: 0.5;
+            }
+        
+        
+            .join-button{
+                background-color: white;
+                border-color: rgb(39, 94, 222);
+                border-style: solid;
+                border-width: 1px;
+                color:rgb(39, 94, 222);
+                /* height:36px; */
+                /* width:62px; */
+                border-radius: 2px;
+                cursor: pointer;
+                margin-right:10px;
+                transition:background-color 0.15s,
+                color 0.15s;
+                padding-right: 16px;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left:16px; /*PADDING adds spacing on the inside of the button*/
+                vertical-align: top;
+            }
+        
+            .join-button:hover{
+                background-color:rgb(39, 94, 222);
+                color:white;
+            }
+        
+            .join-button:active{
+                opacity:0.7;
+            }
+        
+            .tweet-button{
+                background-color: rgb(23, 173, 238);
+                color: white;
+                border: none;
+                height:36px;
+                width:70px;
+                border-radius: 18px;/*half of the height*/
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                /* box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15) ; */
+                /*this takes 4 values*/
+            } /*The first value determines the horozontal position of the shadow (to the right)*/
+            /*The second value sets the vertical position of the shadow*/
+            /*The third value is the blur*/
+            /* the 4th value is the color */
+        
+            /*General Technique*/
+            /* 1.Create element with HTML */
+            /* 2.Style with CSS one-by-one */
+        
+            .tweet-button:hover{
+                box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
+                transition:box-shadow 0.15s;
+            }
+        </style>
+        
+        
+        
+        
+        <!--NOT a GOOD IDEA to set height and width of 
+        our buttons(1:09:12)-->
+    </head>
     <body>
         <button class="subscribe-button">
             SUBSCRIBE
@@ -17,97 +107,6 @@
     </body>
 </html>
 
-
-
-<style>
-    .subscribe-button{
-        background-color: rgb(200, 0, 0);
-        color:white;
-        border: none;
-        /* height: 36px; */
-        /* width:105px; */
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right: 8px;/*margin lets us add spacing on the OUTSIDE of our element*/
-        margin-left: 20px;
-        transition:opacity 0.15s; /*take 2 values the second value is how long the transition will take */
-        vertical-align: top;/*This is how you align your button*/
-    }
-
-    .subscribe-button:hover{
-        opacity:0.8; /*tells us how see-through an html element is*/ /*It goes from 0 to 1*/
-    }
-
-    .subscribe-button:active{/*This activates when we click on the element*/
-        opacity: 0.5;
-    }
-
-
-    .join-button{
-        background-color: white;
-        border-color: rgb(39, 94, 222);
-        border-style: solid;
-        border-width: 1px;
-        color:rgb(39, 94, 222);
-        /* height:36px; */
-        /* width:62px; */
-        border-radius: 2px;
-        cursor: pointer;
-        margin-right:10px;
-        transition:background-color 0.15s,
-        color 0.15s;
-        padding-right: 16px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left:16px; /*PADDING adds spacing on the inside of the button*/
-        vertical-align: top;
-    }
-
-    .join-button:hover{
-        background-color:rgb(39, 94, 222);
-        color:white;
-    }
-
-    .join-button:active{
-        opacity:0.7;
-    }
-
-    .tweet-button{
-        background-color: rgb(23, 173, 238);
-        color: white;
-        border: none;
-        height:36px;
-        width:70px;
-        border-radius: 18px;/*half of the height*/
-        font-weight: bold;
-        font-size: 15px;
-        cursor: pointer;
-        /* box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15) ; */
-        /*this takes 4 values*/
-    } /*The first value determines the horozontal position of the shadow (to the right)*/
-    /*The second value sets the vertical position of the shadow*/
-    /*The third value is the blur*/
-    /* the 4th value is the color */
-
-    /*General Technique*/
-    /* 1.Create element with HTML */
-    /* 2.Style with CSS one-by-one */
-
-    .tweet-button:hover{
-        box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
-        transition:box-shadow 0.15s;
-    }
-</style>
-
-
-
-
-<!--NOT a GOOD IDEA to set height and width of 
-our buttons(1:09:12)-->
 
 
 
