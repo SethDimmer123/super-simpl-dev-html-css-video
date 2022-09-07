@@ -15,9 +15,6 @@
         display:block/*This means the search bar takes up the entire line of code*/
        }
 
-       .video-title {
-        width: 300px;
-       }
 
        /* .video-author, */
        /* .video-stats { */
@@ -33,38 +30,61 @@
         vertical-align: top;/*2:45:08 aligning the two thumbnails*/
         margin-right:15px;
        }
+
+       .channel-picture{
+        display: inline-block;
+        width: 50px;
+       }
+
+       .video-info{
+        display: inline-block;
+        width:200px;
+       }
+
+       .profile-picture{
+        width: 50px;
+       }
     </style>
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
-        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
 
-        <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar 
-            Pichai!
-        </p>
-        <p class="video-author">
-            Marques Brownlee
-        </p>
-        <p class="video-stats">
-            3.4M views &#183; 6 months ago
-        </p>
+        <div>
+            <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
+        </div>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="./channel-pictures/channel-1.jpeg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Talking Tech and AI with Google CEO Sundar 
+                    Pichai!
+                </p>
+                <p class="video-author">
+                    Marques Brownlee
+                </p>
+                <p class="video-stats">
+                    3.4M views &#183; 6 months ago
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
-        <img class="thumbnail" src="./thumbnails/thumbnail-2.webp">
+            <img class="thumbnail" src="./thumbnails/thumbnail-2.webp">
 
-        <p class="video-title">
-            Try Not To Laugh Challenge #9
-        </p>
-        <p class="video-author">
-            Markiplier
-        </p>
-        <p class="video-stats">
-            19M views &#183; 4 years ago
-        </p>
+            <p class="video-title">
+                Try Not To Laugh Challenge #9
+            </p>
+            <p class="video-author">
+                Markiplier
+            </p>
+            <p class="video-stats">
+                19M views &#183; 4 years ago
+            </p>       
     </div>
 </body>
 </html>
