@@ -15,6 +15,10 @@
         display:block/*This means the search bar takes up the entire line of code*/
        }
 
+       .video-title{
+        margin-top:0;
+       }
+
 
        /* .video-author, */
        /* .video-stats { */
@@ -34,6 +38,7 @@
        .channel-picture{
         display: inline-block;
         width: 50px;
+        vertical-align: top;
        }
 
        .video-info{
@@ -42,7 +47,14 @@
        }
 
        .profile-picture{
-        width: 50px;
+        width: 40px;
+        /* width: 100%; */
+        /*this means the image will take up the entire space of its container the container is ".channel-picture" */
+        border-radius: 50px;
+       }
+
+       .thumbnail-row{
+        margin-bottom: 10px;
        }
     </style>
 </head>
@@ -50,27 +62,26 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
-
-        <div><!--setting the vertical layout which is both of the outer divs 3:03:45-->
-            <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
-        </div>
-        <div><!--these outer divs set the horizontal layout-->
-            <div class="channel-picture">
-                <img class="profile-picture" src="./channel-pictures/channel-1.jpeg">
+            <div class="thumbnail-row"><!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+                <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
             </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Talking Tech and AI with Google CEO Sundar 
-                    Pichai!
-                </p>
-                <p class="video-author">
-                    Marques Brownlee
-                </p>
-                <p class="video-stats">
-                    3.4M views &#183; 6 months ago
-                </p>
+            <div><!--these outer divs set the horizontal layout (3:03:50)-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="./channel-pictures/channel-1.jpeg">
+                </div>
+                <div class="video-info"><!--inside of our horizontal layout we have another vertical layout-->
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar 
+                        Pichai!
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
             </div>
-        </div>
     </div>
 
     <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
