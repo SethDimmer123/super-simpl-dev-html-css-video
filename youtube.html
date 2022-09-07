@@ -8,22 +8,29 @@
     <style>
        .thumbnail {
         width:300px;
+        display:block;/*The image takes up the entire line pushing the text box down a line*/
        } 
 
-       .search-bar{
+       .search-bar {
 
        }
 
-       .video-title{
+       .video-title {
         width: 300px;
        }
 
-       
+       /* .video-author, */
+       /* .video-stats { */
+        /* display:inline-block */
+        /*the elements are beside each other and only takes up as much space as they need to*/
+       /* } */
+       /*PARAGRAPHS BY DEFAULT ARE DISPLAY:BLOCK; WHICH MEANS THEY TAKE UP A LINE OF CODE*/
+
     </style>
 </head>
 <body>
-    <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
     <input class="search-bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
 
     <p class="video-title">
         Talking Tech and AI with Google CEO Sundar 
