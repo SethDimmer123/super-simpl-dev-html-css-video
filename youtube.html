@@ -12,7 +12,7 @@
        } 
 
        .search-bar {
-
+        display:block/*This means the search bar takes up the entire line of code*/
        }
 
        .video-title {
@@ -26,22 +26,46 @@
        /* } */
        /*PARAGRAPHS BY DEFAULT ARE DISPLAY:BLOCK; WHICH MEANS THEY TAKE UP A LINE OF CODE*/
 
+
+       .video-preview {
+        width: 300px;
+        display:inline-block;
+        vertical-align: top;/*2:45:08 aligning the two thumbnails*/
+        margin-right:15px;
+       }
     </style>
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Search">
-    <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
 
-    <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar 
-        Pichai!
-    </p>
-    <p class="video-author">
-        Marques Brownlee
-    </p>
-    <p class="video-stats">
-        3.4M views &#183; 6 months ago
-    </p>
+    <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
+        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp">
+
+        <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar 
+            Pichai!
+        </p>
+        <p class="video-author">
+            Marques Brownlee
+        </p>
+        <p class="video-stats">
+            3.4M views &#183; 6 months ago
+        </p>
+    </div>
+
+    <div class="video-preview"><!--The div is just creating a box around all of our content "which is a container"-->
+        <img class="thumbnail" src="./thumbnails/thumbnail-2.webp">
+
+        <p class="video-title">
+            Try Not To Laugh Challenge #9
+        </p>
+        <p class="video-author">
+            Markiplier
+        </p>
+        <p class="video-stats">
+            19M views &#183; 4 years ago
+        </p>
+    </div>
 </body>
 </html>
 
@@ -54,3 +78,11 @@
 
 <!--3. inline element are just text elements= appear within a line of text 
 example is <strong></strong> -->
+
+<!--THE DISPLAY PROPERTY ALLOWS US TO CONTROL HOW AN ELEMENT IS DISPLAYED (2:34:30) -->
+
+<!--Div Element= just a box and is a block element by DEFAULT-->
+
+<!-- divs can contain other elements(2:37:15) divs are containers -->
+
+<!-- (2:46:29) The div element is a container that groups other elements together-->
