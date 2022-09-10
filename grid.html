@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Practice</title><!--3:21:32-->
 </head>
-<body>
+<body style="padding-bottom:1000px;">
     <div style="
         display: grid;
         grid-template-columns: 100px 100px;/*1st column width of 100px 2nd column width of 100px;*/ /*these two values define how WIDE are grid columns are*/
@@ -55,7 +55,42 @@ grid-template-columns: 100px 1fr 1fr;/*1st column width of 100px 2nd column widt
 <div style="background-color:lightblue;">100px</div><!--style attribute lets us write css code inside-->
 <div style="background-color: lightpink;">1fr</div>
 <div style="background-color:lightblue;">1fr</div>
+
+
 </div>
+
+
+
+<hr>
+
+
+
+
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 100px 1fr 1fr;/*1st column width of 100px 2nd column width of 100px;*/ /*these two values define how WIDE are grid columns are*/
+"><!--this the container div-->         <!--grid will have 2 columns-->
+<div style="background-color:lightblue;">100px</div><!--style attribute lets us write css code inside-->
+<div style="background-color: lightpink;">1fr</div>
+<div style="background-color:lightblue;">1fr</div>
+</div>
+
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;/*1st column width of 100px 2nd column width of 100px;*/ /*these two values define how WIDE are grid columns are*/
+"><!--this the container div-->         <!--grid will have 2 columns-->
+<div style="background-color:lightblue; height: 200px;">1fr</div><!--style attribute lets us write css code inside-->
+<div style="background-color: lightpink; height:200px">1fr</div>
+<div style="background-color:lightblue; height: 200px;">1fr</div>
+<div style="background-color: lightpink; height:200px">1fr</div>
+<div style="background-color:lightblue; height: 200px;">1fr</div>
+<div style="background-color: lightpink; height:200px">1fr</div>
+</div>
+
+
+
 
 
 </body>
