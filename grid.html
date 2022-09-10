@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Practice</title>
+    <title>Grid Practice</title><!--3:21:32-->
 </head>
 <body>
-    <div>
-        <div>div 1</div>
-        <div>div 2</div>
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;/*1st column width of 100px 2nd column width of 100px;*/ /*these two values define how WIDE are grid columns are*/
+    "><!--this the container div-->         <!--grid will have 2 columns-->
+        <div style="background-color:lightblue;">div 1</div><!--style attribute lets us write css code inside-->
+        <div style="background-color: lightpink;">div 2<p>text</p></div>
     </div>
+
+    <!-- divs by default are suppose to take up an entire line but when the style is inside a grid -->
+
+    <!--grid maintain alignment much better-->
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;/*1st column width of 100px 2nd column width of 100px;*/ /*these two values define how WIDE are grid columns are*/
+"><!--this the container div-->         <!--grid will have 2 columns-->
+    <div style="background-color:lightblue;">div 1</div><!--style attribute lets us write css code inside-->
+    <div style="background-color: lightpink;">div 2<p>text</p></div>
+</div>
 </body>
 </html>
