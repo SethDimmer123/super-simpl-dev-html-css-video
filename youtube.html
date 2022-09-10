@@ -49,15 +49,22 @@
         margin-right: 15px;
       }
 
+      .video-info-grid{
+        display:grid; /*thi is the first step to creating a grid*/
+        grid-template-columns: 50px 1fr;/*the second step is setting how many columns our grid has.*/
+      }
+
       .channel-picture {
         display: inline-block;
         width: 50px;
         vertical-align: top;
+        background-color: gray;
       }
 
       .video-info {
         display: inline-block;
         width: 200px;
+        background-color: gray;
       }
 
       .profile-picture {
@@ -91,7 +98,7 @@
         <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
         <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
       </div>
-      <div class=""><!--this div is the container(3:30:42)-->
+      <div class="video-info-grid"><!--this div is the container(3:30:42)-->
         <!--these outer divs set the horizontal layout (3:03:50)-->
         <div class="channel-picture">
           <img class="profile-picture" src="./channel-pictures/channel-1.jpeg"/>
