@@ -19,8 +19,9 @@
         margin-bottom: 0;
       }
       .thumbnail {
-        width: 300px;
-        display: block; /*The image takes up the entire line pushing the text box down a line*/
+        width: 100%;
+        /* display: block;  */
+        /*The image takes up the entire line pushing the text box down a line*/
       }
 
       .search-bar {
@@ -42,16 +43,19 @@
       /* } */
       /*PARAGRAPHS BY DEFAULT ARE DISPLAY:BLOCK; WHICH MEANS THEY TAKE UP A LINE OF CODE*/
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top; /*2:45:08 aligning the two thumbnails*/
-        margin-right: 15px;
-      }
+      /* .video-preview { */
 
-      .video-info-grid{
-        display:grid; /*thi is the first step to creating a grid*/
-        grid-template-columns: 50px 1fr;/*the second step is setting how many columns our grid has.*/
+
+        /* width: 300px; */
+        /* display: inline-block; */
+        /* vertical-align: top;  */
+        /*2:45:08 aligning the two thumbnails*/
+        /* margin-right: 15px; */
+      /* } */
+
+      .video-info-grid {
+        display: grid; /*this is the first step to creating a grid*/
+        grid-template-columns: 50px 1fr; /*the second step is setting how many columns our grid has.*/
       }
 
       .channel-picture {
@@ -82,54 +86,171 @@
       .video-author {
         margin-bottom: 4px;
       }
+
+      .video-grid{
+        display:grid;/*first step is to set display to grid*/
+        grid-template-columns:1fr 1fr 1fr ;/*second step is setting how many columns are grid has*/
+      }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search" />
 
-    <div class="video-preview">
-      <!--The div is just creating a box around all of our content "which is a container"-->
-      <div class="thumbnail-row">
-        <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
-        <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
-      </div>
-      <div class="video-info-grid"><!--this div is the container(3:30:42)-->
-        <!--these outer divs set the horizontal layout (3:03:50)-->
-        <div class="channel-picture">
-          <img class="profile-picture" src="./channel-pictures/channel-1.jpeg"/>
+    <div class="video-grid">
+      <!--this is our container(3:39:06)-->
+      <div class="video-preview">
+        <!--The div is just creating a box around all of our content "which is a container"-->
+        <div class="thumbnail-row">
+          <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+          <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
         </div>
-        <div class="video-info">
-          <!--inside of our horizontal layout we have another vertical layout-->
-          <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
+          <!--these outer divs set the horizontal layout (3:03:50)-->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-1.jpeg"
+            />
+          </div>
+          <div class="video-info">
+            <!--inside of our horizontal layout we have another vertical layout-->
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview"><!--to recreate this go to 3:15:50-->
+      <div class="video-preview">
+        <!--to recreate this go to 3:15:50-->
         <!--The div is just creating a box around all of our content "which is a container"-->
         <div class="thumbnail-row">
           <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
           <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
         </div>
-        <div class="video-info-grid"><!--this div is the container(3:30:42)-->
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
           <!--these outer divs set the horizontal layout (3:03:50)-->
           <div class="channel-picture">
-            <img class="profile-picture" src="./channel-pictures/channel-2.jpeg"/>
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-2.jpeg"
+            />
           </div>
           <div class="video-info">
             <!--inside of our horizontal layout we have another vertical layout-->
-            <p class="video-title">
-              Try Not To Laugh Challenge #9
-            </p>
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
             <p class="video-author">Markplier</p>
             <p class="video-stats">19M views &#183; 4 years ago</p>
           </div>
         </div>
       </div>
+
+      <div class="video-preview">
+        <!--The div is just creating a box around all of our content "which is a container"-->
+        <div class="thumbnail-row">
+          <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+          <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
+        </div>
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
+          <!--these outer divs set the horizontal layout (3:03:50)-->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-1.jpeg"
+            />
+          </div>
+          <div class="video-info">
+            <!--inside of our horizontal layout we have another vertical layout-->
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <!--to recreate this go to 3:15:50-->
+        <!--The div is just creating a box around all of our content "which is a container"-->
+        <div class="thumbnail-row">
+          <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+          <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
+        </div>
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
+          <!--these outer divs set the horizontal layout (3:03:50)-->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-2.jpeg"
+            />
+          </div>
+          <div class="video-info">
+            <!--inside of our horizontal layout we have another vertical layout-->
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markplier</p>
+            <p class="video-stats">19M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <!--The div is just creating a box around all of our content "which is a container"-->
+        <div class="thumbnail-row">
+          <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+          <img class="thumbnail" src="./thumbnails/thumbnail-1.webp" />
+        </div>
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
+          <!--these outer divs set the horizontal layout (3:03:50)-->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-1.jpeg"
+            />
+          </div>
+          <div class="video-info">
+            <!--inside of our horizontal layout we have another vertical layout-->
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <!--to recreate this go to 3:15:50-->
+        <!--The div is just creating a box around all of our content "which is a container"-->
+        <div class="thumbnail-row">
+          <!--setting the vertical layout which is both of the outer divs (3:03:45)-->
+          <img class="thumbnail" src="./thumbnails/thumbnail-2.webp" />
+        </div>
+        <div class="video-info-grid">
+          <!--this div is the container(3:30:42)-->
+          <!--these outer divs set the horizontal layout (3:03:50)-->
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="./channel-pictures/channel-2.jpeg"
+            />
+          </div>
+          <div class="video-info">
+            <!--inside of our horizontal layout we have another vertical layout-->
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markplier</p>
+            <p class="video-stats">19M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -161,7 +282,6 @@ example is <strong></strong> -->
 <!--vertical layout then horizontal layout
   then inside the horizontal layout we have a vertical layout-->
 
-
-  <!-- CSS GRID is 
+<!-- CSS GRID is 
     a much better way to create (perfectly aligned) horizontal layouts  
     and a grid than display:inline-block and width to put image and text side by side(3:17:38) -->
