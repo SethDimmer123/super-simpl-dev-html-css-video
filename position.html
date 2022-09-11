@@ -34,7 +34,8 @@
         bottom: 0;
         top: 50px;
         width: 72px;
-      ">
+      "
+    >
       sidebar
       <div
         style="
@@ -44,10 +45,11 @@
           right: 0;
           top: 0; /*from the top of the page*/
           z-index: 2; /*the absolute element appears infront of the header because the z-index is higher than the z-index before*/
-        ">
+        "
+      >
         X
+      </div>
     </div>
-</div>
 
     <div
       style="
@@ -57,7 +59,8 @@
         right: 10px;
         top: 60px; /*from the top of the page*/
         z-index: 2; /*the absolute element appears infront of the header because the z-index is higher than the z-index before*/
-        ">
+      "
+    >
       absolute<!--the browser window is the outer rim of any page(5:09:43) 
     only the page is mving up and down-->
     </div>
@@ -72,28 +75,38 @@
     >
       div 1
     </div>
-    <div style="background-color: lightpink; 
-    height: 200px; 
-    width: 200px;
-    position: relative;/*position relative still places the element as normal*/
-    ">
+    <div
+      style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative; /*position relative still places the element as normal*/
+      ">
       div 2
       <div
-      style="
-        position: absolute; /*placed ON the page*/
-        background-color: red;
-        color: white;
-        right: 10px;
-        top: 60px; /*from the top of the page*/
-        z-index: 2; /*the absolute element appears infront of the header because the z-index is higher than the z-index before*/
-        ">
-      absolute<!--top 60px means from the top of the position relative element not 60px from the TOP of the page-->
-    </div>
+        style="
+          position: absolute; /*placed ON the page*/
+          background-color: black;
+          color: white;
+          bottom: 10px;
+          right: 10px;
+          /* top: 60px;  */
+          /*from the top of the page*/
+          /* z-index: 2;  */
+          /*the absolute element appears infront of the header because the z-index is higher than the z-index before*/
+          ">
+        5:00
+        <!-- absolute -->
+        <!--top 60px means from the top of the position relative element not 60px from the TOP of the page-->
+      </div>
     </div>
   </body>
 </html>
 
 <!--when position absolute is INSIDE position relative
-the div 2 will be positioned on the element NOT ON THE PAGE-->
+the div 2 will be positioned on the element which is the div 2
+NOT ON THE PAGE-->
 
 <!--Position relative causes the entire div 2 element to Display NORMALLY-->
+
+<!--The position absolute is put inside a position relative  -->
