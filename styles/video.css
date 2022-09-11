@@ -9,9 +9,10 @@ p {
     /*The image takes up the entire line pushing the text box down a line*/
   }
 
-  .search-bar {
-    display: block; /*This means the search bar takes up the entire line of code*/
-  }
+  /* .search-bar { */
+    /* display: block;  */
+    /*This means the search bar takes up the entire line of code*/
+  /* } */
 
   .video-title {
     margin-top: 0;
