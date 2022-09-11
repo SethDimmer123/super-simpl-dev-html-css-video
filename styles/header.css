@@ -24,7 +24,7 @@
 }
 
 .middle-section {
-    background-color: lightpink;
+    /* background-color: lightpink; */
     flex: 1;/*the middle section is stretching*/
     margin-left: 70px;
     margin-right: 35px;
@@ -33,6 +33,23 @@
     300 pixels we are going to LIMIT IT to 300px*/
     display:flex;
     align-items: center;
+}
+
+.search-bar{
+    flex:1;/*we use flex-1 to stretch the search bar to take up the remaining space*/
+    height:36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder{
+    font-family: roboto,Arial;
+    font-size: 16px;
 }
 
 .search-button{
