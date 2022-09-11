@@ -84,9 +84,14 @@ p {
 
 
   .video-time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight:500;
+    padding: 4px;
     background-color:black;
     color:white;
     position:absolute;
     bottom:8px;
     right:5px;
+    border-radius: 2px;
   }
