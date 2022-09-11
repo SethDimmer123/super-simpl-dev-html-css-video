@@ -83,9 +83,30 @@
 }
 
 .right-section{
-    background-color: lightblue;
-    width:200px;/*we wanted a fixed width*/
+    /* background-color: lightblue; */
+    width:180px;
+    /*we wanted a fixed width*/
+    margin-right:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink:0;/*no matter what happens we will keep the width and shrinking will not occur*/
 }
 
+.upload-icon{
+    height: 24px;
+}
 
+.youtube-apps-icon{
+    height: 24px;
+}
+
+.notifications-icon{
+    height: 24px;
+}
+
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
 
