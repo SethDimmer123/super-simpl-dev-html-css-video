@@ -105,11 +105,18 @@
   <body>
     <div class="header"><!--To create a horizontal layout we are going to turn are header container into a flexbox-->
       <div class="left-section"><!--divs by default are aligned VERTICALLY WHICH IS DISPLAY:BLOCK-->
-        left section
+        <img class="hamburger-menu" src="./icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="./icons/youtube-logo.svg">
       </div>
       <div class="middle-section">
         <input class="search-bar" type="text" 
         placeholder="Search" />
+        <button class="search-button"><!--you target these with a class so you can edit them in css that is the wholepoint of adding a class to any HTML element-->
+          <img src="icons/search.svg">
+        </button>
+        <button class="voice-search-button">
+          <img src="icons/voice-search-icon.svg">
+        </button>
       </div>
       <div class="right-section">
         right section

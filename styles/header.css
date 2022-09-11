@@ -6,8 +6,21 @@
 }
 
 .left-section{
-    background-color: lightblue;
-    width:150px;/*we wanted a fixed width*/
+    /* background-color: lightblue; */
+    /* width:150px; */
+    /*we wanted a fixed width*/
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 20px;
+    margin-left: 24px;
+    margin-right:24px;
+}
+
+.youtube-logo{
+    height: 20px;
 }
 
 .middle-section {
@@ -18,6 +31,18 @@
     max-width: 500px;/*(4:12:30)this property means the width can be less than 300 pixels
     but as soon as it grows to be over 
     300 pixels we are going to LIMIT IT to 300px*/
+    display:flex;
+    align-items: center;
+}
+
+.search-button{
+    height: 40px;
+    width: 60px;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
 }
 
 .right-section{
