@@ -1,3 +1,28 @@
 .header{
     height:55px;
+    display:flex;/*use display:flex on the parent element*/
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.left-section{
+    background-color: lightblue;
+    width:150px;/*we wanted a fixed width*/
+}
+
+.middle-section {
+    background-color: lightpink;
+    flex: 1;/*the middle section is stretching*/
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;/*(4:12:30)this property means the width can be less than 300 pixels
+    but as soon as it grows to be over 
+    300 pixels we are going to LIMIT IT to 300px*/
+}
+
+.right-section{
+    background-color: lightblue;
+    width:200px;/*we wanted a fixed width*/
+}
+
+/* stopped at 4:15:25 */
