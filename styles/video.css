@@ -61,6 +61,8 @@ p {
 
   .thumbnail-row {
     margin-bottom: 12px;
+    position:relative;/*position relative doesnt really change anything*/
+
   }
 
   .video-author,
@@ -78,4 +80,13 @@ p {
     grid-template-columns:1fr 1fr 1fr ;/*second step is setting how many columns are grid has*/
     column-gap: 15px;
     row-gap:40px;
+  }
+
+
+  .video-time{
+    background-color:black;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:5px;
   }
