@@ -72,7 +72,27 @@
     margin-left: -1px;/*negative margin will pull not put*/
     margin-right: 8px;
 
+    position: relative;
+
 }
+
+.search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding:4px 8px 4px 8px;/*like clockwise*/
+    border-radius: 2px;
+    font-size: 12px;
+    bottom:-30px;
+    opacity:0;/*makes the "search tooltip" invisible*/
+    transition:opacity 0.15s;
+    pointer-events: none;/*this means when are mouse hovers over the tooltip it is not going to do anything(6:01:10)*/
+}
+
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
 
 .search-icon{
     height: 25px;
