@@ -5,10 +5,18 @@
     top:55px;
     background-color: white;
     width: 72px;
+    z-index: 200;/*changed the z-index higher than the header z-index to cover the line that the header runs under(5:48:30)*/
+    padding-top:5px;
 }
 
 .sidebar-link{
-    height: 76px;
+    height: 74px;
+    display:flex;/*flexbox only works on the parent elements not on the children*/
+    justify-content: center;/*(5:47:00)when flex direction column is on justify-content affects the VERTICAL DIRECTION(up and down) instead of the HORIZONTAL DIRECTION(left and right) with flex -direction:row*/
+    align-items: center;
+    flex-direction: column;/*displays the sidebar-divs VERTICALLY*/
+    /* flex-direction: row; */ /*displays the sidebar link divs HORIZONTALLY*/
+    cursor: pointer;
 }
 
 .sidebar-link:hover{
@@ -17,4 +25,10 @@
 
 .sidebar-link img{/*(5:41:45)*/
 height:24px;
+margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    font-family: Roboto,Arial;
+    font-size: 10px;
 }
