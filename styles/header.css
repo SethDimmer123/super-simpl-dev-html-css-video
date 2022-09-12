@@ -76,7 +76,15 @@
 
 }
 
-.search-button .tooltip{
+.search-button,
+.voice-search-button{
+    display:flex;
+    justify-content: center;/*centers the hover voice search button text HORIZONTALLY*/
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip,.voice-search-button .tooltip{
     position: absolute;
     background-color: gray;
     color:white;
@@ -87,16 +95,19 @@
     opacity:0;/*makes the "search tooltip" invisible*/
     transition:opacity 0.15s;
     pointer-events: none;/*this means when are mouse hovers over the tooltip it is not going to do anything(6:01:10)*/
+    white-space: nowrap;/*prevents the text from wrapping around when hovering over voice search button */
 }
 
-.search-button:hover .tooltip {
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
     opacity: 1;
 }
 
 
 .search-icon{
     height: 25px;
-    margin-top: 4px;/*you can either do this to VERTICALLY align or you can flexbox the search button on the class above this one*/
+    /* margin-top: 4px; */
+    /*you can either do this to VERTICALLY align or you can flexbox the search button on the class above this one*/
 }
 
 .voice-search-button{
