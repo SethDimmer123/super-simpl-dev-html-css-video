@@ -14,3 +14,7 @@
 .sidebar-link:hover{
     background-color: rgb(235, 235, 235);
 }
+
+.sidebar-link img{/*(5:41:45)*/
+height:24px;
+}
