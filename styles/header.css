@@ -77,14 +77,18 @@
 }
 
 .search-button,
-.voice-search-button{
+.voice-search-button,
+.upload-icon-container{
     display:flex;
     justify-content: center;/*centers the hover voice search button text HORIZONTALLY*/
     align-items: center;
     position: relative;
 }
 
-.search-button .tooltip,.voice-search-button .tooltip{
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip{
+    font-family: Roboto,Arial;
     position: absolute;
     background-color: gray;
     color:white;
@@ -99,7 +103,8 @@
 }
 
 .search-button:hover .tooltip,
-.voice-search-button:hover .tooltip {
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
     opacity: 1;
 }
 
@@ -170,3 +175,6 @@
     border-radius: 16px;
 }
 
+
+
+/*stopped at 5:33:51*/
